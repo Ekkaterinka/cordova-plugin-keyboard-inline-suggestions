@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-keyboard-inline-suggestions",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-keyboard-inline-suggestions",
+    "platforms": [
+      "android"
+    ]
+  },
+  "main": "index.js",
+  "keywords": [
+    "android",
+    "keyboard",
+    "autocomlete"
+  ],
+  "author": "Ekaterina Belova",
+  "license": "ISC",
+  "description": "Cordova Plugin to enable inline suggestions on Android keyboard",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-electron": ">=3.0.0",
+        "cordova-android": ">=7.0.0"
+      }
+    }
+  }
+}

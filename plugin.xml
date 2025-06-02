@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-keyboard-inline-suggestions" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-keyboard-inline-suggestions</name>
+    <description>Cordova Plugin to enable inline suggestions on Android keyboard</description>
+    <js-module name="cordova-plugin-keyboard-inline-suggestions" src="www/cordova-plugin-keyboard-inline-suggestions.js">
+        <clobbers target="cordova.plugins.cordova-plugin-keyboard-inline-suggestions" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="cordova-plugin-keyboard-inline-suggestions">
+                <param name="android-package" value="com.microline.zont.cordova-plugin-keyboard-inline-suggestions" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/cordova-plugin-keyboard-inline-suggestions.java" target-dir="app/src/main/java/com/microline/zont/cordova-plugin-keyboard-inline-suggestions" />
+    </platform>
+</plugin>
